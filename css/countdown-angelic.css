@@ -1,0 +1,63 @@
+#countdown {
+  text-align: center;
+}
+/* #countdown .section-head {
+  margin-bottom: 15px;
+  z-index: 1;
+}
+#countdown .section-head span {
+  display: block;
+  position: relative;
+  font-family: nunito sans, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 0;
+}
+#countdown .section-head h4 {
+  position: relative;
+  color: #fff;
+  font-family: dancing script, cursive;
+  font-weight: 400;
+  font-size: 50px;
+  margin-bottom: 0;
+}
+#countdown .section-head p {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 0;
+} */
+#countdown ul {
+  margin-bottom: 0;
+  padding: 0;
+}
+#countdown li {
+  font-family: nunito sans, sans-serif;
+  font-weight: 400;
+  display: inline-block;
+  font-size: 15px;
+  list-style-type: none;
+  padding: 15px;
+  color: #fff;
+  line-height: 3em;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+#countdown li span {
+  display: block;
+  font-family: nunito sans, sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -1px;
+}
+@media all and (max-width: 768px) {
+  #countdown li {
+    font-size: 12px;
+    padding: 15px;
+  }
+  #countdown li span {
+    font-size: 60px;
+  }
+}
