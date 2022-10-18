@@ -278,7 +278,7 @@
 				<!--End row-->
 				<!--Row-->
 				<div class="row">
-					<div class="col-sm-5 col-sm-offset-1 text-center">
+					<div class="col-sm-6 text-center">
 						<div class="block-event">
 							<div class="circle-dashed relative bg green ">
 								<div class="round-circle  green before">
@@ -301,13 +301,12 @@
 								</a> -->
 							</p>
 
-							<button type="button" class="btn btn-primary directionsButton" data-lat="44.4064877"
-								data-lng="26.0949597">Navighează</button>
+							<button type="button" class="btn btn-primary directionsButton" data-lat="44.4065"
+								data-lng="26.0964">Navighează</button>
 
-							<div class="mapWrapper">
-								<div class="map map-cununie-religioasa"
-									style="width: 100%; height: 300px; padding-bottom: 5px;" data-lat="44.4064877"
-									data-lng="26.0949597" data-full="RO Sector 4, Bucuresti, 052034"
+							<div class="mapWrapper pt-30">
+								<div class="map map-cununie-religioasa" style="width: 100%; height: 300px;"
+									data-lat="44.4065" data-lng="26.0964" data-full="RO Sector 4, Bucuresti, 052034"
 									data-name="Biserica Eroilor Martiri din Decembrie 1989"
 									data-address="Calea Serban Voda, nr. 237">
 
@@ -322,7 +321,7 @@
 
 						</div>
 					</div>
-					<div class="col-sm-5 text-center">
+					<div class="col-sm-6 text-center">
 						<div class="block-event swap">
 							<div class="circle-dashed relative bg">
 								<div class="round-circle  before">
@@ -346,14 +345,13 @@
 								</a> -->
 							</p>
 
-							<button type="button" class="btn btn-primary directionsButton" data-lat="44.4045954"
-								data-lng="26.1111468">Navighează</button>
+							<button type="button" class="btn btn-primary directionsButton" data-lat="44.4045"
+								data-lng="26.1119">Navighează</button>
 
-							<div class="mapWrapper">
-								<div class="map map-petrecere" style="width: 100%; height: 300px; padding-bottom: 5px;"
-									data-lat="44.4045954" data-lng="26.1111468"
-									data-full="Calea Piscului 10, București 040401" data-name="Daimon - Boho"
-									data-address="Calea Piscului 10">
+							<div class="mapWrapper pt-30">
+								<div class="map map-petrecere" style="width: 100%; height: 300px;" data-lat="44.4045"
+									data-lng="26.1119" data-full="Calea Piscului 10, București 040401"
+									data-name="Daimon - Boho" data-address="Calea Piscului 10">
 
 								</div>
 								<div class="infowindow-content">
@@ -507,7 +505,8 @@
 	</div>
 
 
-	<!-- Modal -->
+	<!-- Maps modals -->
+	<!-- Modal 
 	<div class="modal fade" id="modalHartaPetrecere" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
@@ -540,7 +539,7 @@
 		</div>
 	</div>
 
-	<!-- Modal -->
+	Modal 
 	<div class="modal fade" id="modalHartaCununie" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
@@ -571,7 +570,8 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
+	<!-- End Maps modals -->
 
 
 	<!-- End wrapper-->
@@ -729,6 +729,7 @@
 			var map = new google.maps.Map(currentMap, {
 				center: latlng,
 				zoom: 17,
+				streetViewControl: false,
 				mapTypeControl: false,
 				scrollwheel: false
 			});
@@ -737,7 +738,7 @@
 			var marker = new google.maps.Marker({
 				position: latlngObj,
 				map: map,
-				anchorPoint: new google.maps.Point(0, -29)
+				anchorPoint: new google.maps.Point(0, -30)
 			});
 
 			map.setCenter(marker.getPosition());
